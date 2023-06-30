@@ -8,7 +8,7 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div className={` ${styles.paddingX} gap-15 max-w-7xl`}>
+    <div className={` ${styles.paddingX} gap-15 flex-wrap justify-center items-center max-w-7xl mx-auto`}>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Tech Learned</p>
         <h2 className={styles.sectionHeadText}>Technology.</h2>
