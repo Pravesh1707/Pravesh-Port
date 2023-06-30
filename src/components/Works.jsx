@@ -62,7 +62,7 @@ const ProjectCard = ({index,name,description, tags,image, source_code_link,}) =>
 
 const Works = () => {
   return (
-    <div className={` ${styles.paddingX} gap-15 max-w-7xl`}>
+    <div className={` ${styles.paddingX} gap-15 flex-wrap justify-center items-center max-w-7xl mx-auto`}>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -81,7 +81,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-5'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
